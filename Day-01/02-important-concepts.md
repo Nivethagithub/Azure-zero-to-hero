@@ -4,9 +4,14 @@
 
 Virtualization is the process of creating a virtual version of something, such as an operating system, server, storage, or network resources.
 
+Virtualization creates simulated computing environments, or "virtual machines," allowing a single physical computer or server to host multiple operating systems and applications, according to Microsoft Azure. This technology optimizes resource utilization, reduces infrastructure costs, and enhances flexibility, scalability, and disaster recovery capabilities
+
+
 ## Virtual Machine
 
 A Virtual Machine (VM) is a software-based emulation of a physical computer. It allows running multiple operating systems on a single physical machine.
+
+A virtual machine (VM) is a software-based emulation of a physical computer, enabling it to run multiple operating systems and applications concurrently on a single physical machine. It functions like a real computer, with its own CPU, memory, storage, and network interface. VMs are often used in cloud computing to virtualize resources and provide a more efficient and scalable computing environment. 
 
 ## API (Application Programming Interface)
 
