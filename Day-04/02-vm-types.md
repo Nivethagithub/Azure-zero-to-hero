@@ -4,13 +4,13 @@ Azure provides a variety of virtual machine (VM) offerings to cater to different
 
 ## General Purpose VMs
 
-Standard_D2s_v3 -  General Purpose VMs (Hosting websites, lightweight applications)
-Standard_F2s_v2 -  Compute Optimized VMs (Batch processing, gaming applications)
-Standard_E16s_v3 - Memory Optimized VMs (Running large databases)
-Standard_L8s_v2  - Storage Optimized VMs (Big data applications, data warehousing)
-Standard_NC6s_v3 -  GPU VMs (ML, graphics rendering)
-Standard_H16r   -  High-Performance Compute VMs (Simulations, modeling)  
- B1s             -  Burstable VMs   (small websites)
+1. Standard_D2s_v3 -  General Purpose VMs (Hosting websites, lightweight applications)
+2. Standard_F2s_v2 -  Compute Optimized VMs (Batch processing, gaming applications)
+3. Standard_E16s_v3 - Memory Optimized VMs (Running large databases)
+4. Standard_L8s_v2  - Storage Optimized VMs (Big data applications, data warehousing)
+5. Standard_NC6s_v3 -  GPU VMs (ML, graphics rendering)
+6. Standard_H16r   -  High-Performance Compute VMs (Simulations, modeling)  
+7. B1s             -  Burstable VMs   (small websites)
 
 **Example: Standard_D2s_v3**
 
