@@ -14,7 +14,7 @@ Azure provides a variety of virtual machine (VM) offerings to cater to different
 
 **Example: Standard_F2s_v2**
 
-- **Description:** Compute optimized VMs are designed for compute-intensive workloads that require high CPU power. They provide a high CPU-to-memory ratio, making them suitable for data analytics and computational tasks.
+- **Description:** Compute optimized VMs are designed for **compute-intensive workloads that require high CPU power**. They provide a high CPU-to-memory ratio, making them suitable for data analytics and computational tasks.
 
 - **Use Case:** Batch processing, gaming applications, and other CPU-intensive workloads.
 
