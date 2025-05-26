@@ -84,7 +84,7 @@ what is standalone here ?
 
 🔸 Example:
 
-You can create an NSG, add a rule to allow port 80 from any source, and assign it to a subnet — that’s standalone use.
-You cannot create an ASG and expect it to filter traffic. You must reference the ASG in an NSG rule.
+* You can create an NSG, add a rule to allow port 80 from any source, and assign it to a subnet — that’s standalone use.
+* You cannot create an ASG and expect it to filter traffic. You must reference the ASG in an NSG rule.
 
 
