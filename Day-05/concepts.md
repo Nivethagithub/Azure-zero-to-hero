@@ -51,3 +51,23 @@ ASGs group Azure virtual machines based on application requirements, simplifying
 - **Dynamic Membership**: ASGs support dynamic membership based on tags or other attributes.
 
 - **Rule Association**: Security rules can be associated with ASGs for intuitive and scalable network security management.
+
+## 
+| Use NSG when...                         | Use ASG when...                                  |
+| --------------------------------------- | ------------------------------------------------ |
+| You need to allow/deny traffic.         | You want to group VMs for easier rule targeting. |
+| Managing access at subnet or NIC level. | Managing rules for dynamic VM groups.            |
+
+
+##
+| Feature              | **NSG (Network Security Group)**                     | **ASG (Application Security Group)**                               |
+| -------------------- | ---------------------------------------------------- | ------------------------------------------------------------------ |
+| **Purpose**          | Controls inbound/outbound network traffic via rules. | Groups VMs with similar functions to simplify NSG rule management. |
+| **Type**             | Firewall-like rule set.                              | Logical container for grouping VMs.                                |
+| **Applies To**       | Subnets or Network Interfaces (NICs).                | Referenced inside NSG rules.                                       |
+| **Contains**         | Rules (Source/Destination, Port, Protocol, Action).  | A set of VM NICs grouped together.                                 |
+| **Granularity**      | Enforces traffic rules.                              | Used within NSGs to target groups.                                 |
+| **Example Usage**    | Allow only port 80 traffic to a subnet.              | Target all web servers grouped in an ASG in an NSG rule.           |
+| **Scalability**      | Rules can get complex with many VMs.                 | Simplifies rules by grouping similar VMs.                          |
+| **Can Stand Alone?** | Yes, used independently.                             | No, must be used inside NSG rules.                                 |
+
