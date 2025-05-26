@@ -71,3 +71,20 @@ ASGs group Azure virtual machines based on application requirements, simplifying
 | **Scalability**      | Rules can get complex with many VMs.                 | Simplifies rules by grouping similar VMs.                          |
 | **Can Stand Alone?** | Yes, used independently.                             | No, must be used inside NSG rules.                                 |
 
+##
+
+what is standalone here ?
+
+
+| Concept                              | Can it be used on its own? | Explanation                                                                                                            |
+| ------------------------------------ | -------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| **NSG (Network Security Group)**     | ✅ **Yes (Standalone)**     | You can create NSG rules and associate them directly with subnets or NICs. It works independently.                     |
+| **ASG (Application Security Group)** | ❌ **No (Not Standalone)**  | An ASG **must** be used **inside an NSG rule**. It cannot control traffic by itself. It only groups VM NICs logically. |
+
+
+🔸 Example:
+You can create an NSG, add a rule to allow port 80 from any source, and assign it to a subnet — that’s standalone use.
+
+You cannot create an ASG and expect it to filter traffic. You must reference the ASG in an NSG rule.
+
+
