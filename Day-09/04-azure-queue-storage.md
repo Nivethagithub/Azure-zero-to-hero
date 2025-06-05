@@ -8,16 +8,14 @@
 2. 🔗 What is Decoupling?
 Decoupling means designing systems where components are independent of each other, so changes or failures in one part don’t break the whole system.
 
-🔁 Example:
-Let’s say:
-
-You have a front-end app for taking customer orders.
-
-You have a backend app for processing those orders.
+## 🔁 Example:
+**Let’s say:**
+* You have a front-end app for taking customer orders.
+* You have a backend app for processing those orders.
 
 If the backend is slow or temporarily down, the frontend can still work by placing the order in a queue. The backend will process it when it’s back up.
 
-🎯 Benefit:
+**🎯 Benefit:**
 Systems become more scalable, fault-tolerant, and easier to maintain.
 
 3. When to use it?
