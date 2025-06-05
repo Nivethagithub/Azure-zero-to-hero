@@ -87,4 +87,54 @@ what is standalone here ?
 * You can create an NSG, add a rule to allow port 80 from any source, and assign it to a subnet — that’s standalone use.
 * You cannot create an ASG and expect it to filter traffic. You must reference the ASG in an NSG rule.
 
+#
+In Azure, NSG (Network Security Group) and ASG (Application Security Group) are both used for managing network security, but they serve different purposes and work together in many scenarios.
+
+## ✅ Network Security Group (NSG)
+Purpose: Controls inbound and outbound network traffic to and from Azure resources at the subnet or NIC (Network Interface Card) level.
+
+**🔑 Key Features:**
+1. Works like a firewall.
+2. Contains security rules with:
+      - Source/Destination (IP, IP range, ASG)
+      - Port number
+      - Protocol (TCP/UDP/Any)
+      - Allow/Deny
+3. Can be associated with:
+   - A subnet
+   - A network interface (NIC) of a VM
+
+**📌 Example Use Case:**
+Block all internet traffic to a subnet except for ports 80 and 443.
+
+## ✅ Application Security Group (ASG)
+Purpose: A logical grouping of VMs based on application roles, enabling easier network rule management without hardcoding IP addresses.
+
+**🔑 Key Features:**
+1. Acts like a label for NICs.
+2. Can be used in NSG rules as source or destination.
+3. Allows you to group VMs like:
+  - web-servers
+  - app-servers
+  - db-servers
+4. Useful in dynamic or large-scale environments.
+
+**📌 Example Use Case:**
+Allow traffic from ASG web-servers to ASG app-servers on port 8080 using a single NSG rule.
+
+## 🆚 NSG vs ASG Summary
+| Feature              | NSG                                 | ASG                                         |
+| -------------------- | ----------------------------------- | ------------------------------------------- |
+| Purpose              | Enforces security rules             | Groups VMs for simplified rule creation     |
+| Works at             | Subnet or NIC level                 | NIC level only                              |
+| Contains rules       | Yes                                 | No (used **in** NSG rules)                  |
+| Can be used in rules | Yes (source/destination IP/ASG)     | Only used **as source/destination** in NSG  |
+| Example              | Deny all traffic except 22, 80, 443 | Allow `web-servers` to talk to `db-servers` |
+
+**🔗 Relationship:**
+* NSG enforces the rules.
+* ASG simplifies the targets/sources in those rules.
+
+You typically use both together to create scalable, flexible, and maintainable network security policies.
+
 
