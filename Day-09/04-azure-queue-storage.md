@@ -6,6 +6,7 @@
     It provides a reliable way to store and retrieve messages between application components, ensuring asynchronous communication.
 
 2. 🔗 What is Decoupling?
+   
 Decoupling means designing systems where components are independent of each other, so changes or failures in one part don’t break the whole system.
 
 ## 🔁 Example:
@@ -18,16 +19,23 @@ If the backend is slow or temporarily down, the frontend can still work by placi
 **🎯 Benefit:**
 Systems become more scalable, fault-tolerant, and easier to maintain.
 
-3. When to use it?
+3. 🕓 What is Asynchronous Communication?
+   
+In asynchronous communication, systems send and receive messages independently, without waiting for each other to be available at the same time.
+
+🔁 Example:
+A web app uploads an image and places a message in a queue to trigger background processing.
+
+4. When to use it?
 
     Use Azure Queue Storage when you need to enable communication and coordination between different parts of a distributed application.
     It is suitable for scenarios like handling background jobs, managing tasks asynchronously, and facilitating communication between loosely coupled components.
 
-4. Example from DevOps Engineer point of view?
+5. Example from DevOps Engineer point of view?
 
     A DevOps engineer may use Azure Queue Storage to implement a message queue for processing background tasks or managing communication between microservices.
     During deployment, scripts can enqueue messages to trigger specific actions or coordinate tasks between different components.
 
-5. Equivalent service in AWS:
+6. Equivalent service in AWS:
 
     The equivalent service in AWS is Amazon Simple Queue Service (SQS). SQS provides a fully managed message queue service for decoupling components in a distributed system.
