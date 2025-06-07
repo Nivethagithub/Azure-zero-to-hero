@@ -1,4 +1,4 @@
-# Azure Resource Manager Templates
+ # Azure Resource Manager Templates
 
 ```
 {
@@ -18,7 +18,7 @@
         }
     },
     "functions": [],
-    "variables": {
+    "variables": {              #### Defining reusable variables. 
         "resourceName": "storageaccount_testing"
     },
     "resources": [
@@ -35,7 +35,7 @@
                 "name": "Premium_LRS",
                 "tier": "[parameters('Storage')]"
             }
-        }, 
+        },  ## creating another resources
         {
             "name": "keyVault1",
             "type": "Microsoft.KeyVault/vaults",
