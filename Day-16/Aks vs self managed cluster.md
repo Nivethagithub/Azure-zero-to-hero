@@ -4,6 +4,8 @@
 
 **Data plane :**  Best practice is to two nodes
 
+## 
+
 | Feature         | On-Premises Cluster                                                            | Self-Managed Kubernetes Cluster                                                 | Azure Kubernetes Service (AKS)                                                    |
 | --------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | **Maintenance** | You are responsible for all upgrades and maintenance.                          | You must manage version upgrades and patches manually.                          | Azure manages control plane upgrades and patching. Lower maintenance overhead.    |
