@@ -1,5 +1,6 @@
 K8s :
 Control plane : Best practice is to have three nodes 
+
 Data plane :  Best practice is to two nodes
 
 | Feature         | On-Premises Cluster                                                            | Self-Managed Kubernetes Cluster                                                 | Azure Kubernetes Service (AKS)                                                    |
